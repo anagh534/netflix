@@ -28,6 +28,7 @@
     color: #fff;
     text-decoration: none;
     font-weight: lighter;
+    font-size: 14px;
 }
 .home:hover,.tvShows:hover,.myList:hover,.movies:hover,.recently-added:hover{
     text-decoration: none;
