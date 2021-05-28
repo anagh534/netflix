@@ -18,3 +18,28 @@
     right: 20px;
     width: 30px;
 }
+.home{
+    margin-left: 7rem;
+}
+.tvShows,.myList,.recently-added{
+    margin-left: 2rem;
+}
+.home,.tvShows,.myList,.movies,.recently-added{
+    color: rgb(80, 23, 23);
+    text-decoration: none;
+    font-weight: lighter;
+}
+.home:hover,.tvShows:hover,.myList:hover,.movies:hover,.recently-added:hover{
+    text-decoration: none;
+}
+.icon{
+    margin-right: 6rem;
+    font-size: 17px;
+}
+.icon a{
+    color: white;
+    margin-left: 1rem;
+}
+.icon .searchBtn{
+    font-size: 15px;
+}
