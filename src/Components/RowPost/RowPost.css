@@ -15,8 +15,25 @@
 .poster{
     max-height: 250px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .smallPoster{
     max-height: 100px;
     margin-right: 10px;
+    cursor: pointer;
+}
+.poster:hover{
+    transform: scale(1.1);
+}
+.smallPoster:hover{
+    transform: scale(1.1);
+}
+.objTitle{
+    position: relative;
+    opacity: 50%;
+}
+@media(max-width:406px){
+    .row{
+        margin-top: 8rem;
+    }
 }

@@ -44,3 +44,8 @@
 .icon .searchBtn{
     font-size: 15px;
 }
+@media(max-width:406px){
+    .home,.tvShows,.myList,.movies,.recently-added{
+        display: none;
+    }
+}
