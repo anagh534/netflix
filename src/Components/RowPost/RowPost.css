@@ -34,6 +34,7 @@
 }
 @media(max-width:406px){
     .row{
-        margin-top: 8rem;
+        margin-top: 9rem;
+        margin-bottom: -7rem;
     }
 }
