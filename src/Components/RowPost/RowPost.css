@@ -36,5 +36,9 @@
     .row{
         margin-top: 9rem;
         margin-bottom: -7rem;
+        margin-left: 5px;
+    }
+    .title{
+        font-size: 18px;
     }
 }

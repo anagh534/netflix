@@ -36,7 +36,7 @@ function RowPost(props) {
     }
     return (
         <div className="row">
-            <h2>{props.title}</h2>
+            <h3 className="title">{props.title}</h3>
             <div className="posters">
                 {movies.map((obj) =>
                     <div>
