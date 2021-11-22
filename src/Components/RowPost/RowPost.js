@@ -17,12 +17,12 @@ function RowPost(props) {
     const [movies, setMovies] = useState([])
     useEffect(() => {
         axios.get(props.url).then((response) => {
-            console.log(response.data);
+            // console.log(response.data);
             setMovies(response.data.results)
         }).catch(err => {
             // alert("Network Error")
         })
-    }, [])
+    })
     const handleMovie = (id) => {
         // console.log(id);
         axios.get(`/movie/${id}/videos?api_key=${API_KEY}&language=en-US`).then((response) => {
@@ -30,7 +30,7 @@ function RowPost(props) {
             if (response.data.results.length !== 0) {
                 setUrlId(response.data.results[0])
             } else {
-                console.log("Array empty");
+                // console.log("Array empty");
             }
         })
     }
@@ -40,7 +40,7 @@ function RowPost(props) {
             <div className="posters">
                 {movies.map((obj) =>
                     <div>
-                        <img onClick={() => handleMovie(obj.id)} className={props.isSmall ? "smallPoster" : "poster"} src={`${imageUrl + obj.backdrop_path}`} />
+                        <img alt="" onClick={() => handleMovie(obj.id)} className={props.isSmall ? "smallPoster" : "poster"} src={`${imageUrl + obj.backdrop_path}`} />
                     </div>
                 )}
             </div>

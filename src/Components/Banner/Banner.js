@@ -10,7 +10,7 @@ function Banner() {
         var count=0;
         axios.get(`/trending/all/week?api_key=${API_KEY}&language=en-US`).then((response) => {
             setMovie(response.data.results[count+1])
-            console.log(count);
+            // console.log(count);
         })
     }, [])
     return (

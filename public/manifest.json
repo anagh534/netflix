@@ -1,6 +1,7 @@
 {
   "short_name": "Netflix",
   "name": "Created By ANAGH K R",
+  "description": "Watch trailer's and find the movie details.",
   "icons": [
     {
       "src": "favicon.ico",

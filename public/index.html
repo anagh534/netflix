@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Netflix Clone Web Application." />
   <meta name="keywords"
-    content="ANAGH K R,anagh k r,anagh,anagh web design and web development malayalam,anagh web design and development kasaragod">
+    content="ANAGH K R,anagh k r,anagh,anagh web design and web development malayalam,anagh web design and development kasaragod,netflix clone,netflix on watch trailers,new movies and trailers">
   <link rel=”shortcut icon” href=”%PUBLIC_URL%/favicon.ico”>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -18,6 +18,17 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('%PUBLIC_URL%/serviceworker.js')
+          .then((reg) => console.log("success", reg.scope))
+          .catch((err) => console.log("fail", err));
+      });
+    } else {
+      console.log("service worker not support");
+    }
+  </script>
 </body>
 
 </html>
