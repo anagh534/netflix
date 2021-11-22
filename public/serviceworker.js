@@ -1,5 +1,5 @@
 const CACHE_NAME = "netflix-clone";
-const urlsToCache = ['index.html', 'favicon.ico'];
+const urlsToCache = ['index.html'];
 
 const self = this;
 
