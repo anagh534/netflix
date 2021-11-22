@@ -1,5 +1,5 @@
 const CACHE_NAME = "netflix-clone";
-const urlsToCache = ['index.html'];
+const urlsToCache = ['index.html','offline.html'];
 
 const self = this;
 
@@ -18,7 +18,7 @@ self.addEventListener('fetch', event => {
         caches.match(event.request)
             .then(() => {
                 return fetch(event.request)
-                    .catch(() => caches.match('index.html'))
+                    .catch(() => caches.match('offline.html'))
             })
     )
 });
