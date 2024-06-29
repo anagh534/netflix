@@ -1,51 +1,76 @@
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 30px;
+    height: 60px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     background-color: #111;
 }
-.logo{
+
+.logo {
     position: fixed;
     left: 20px;
     width: 80px;
 }
-.avatar{
+
+.avatar {
     position: fixed;
     right: 20px;
     width: 30px;
 }
-.home{
+
+.home {
     margin-left: 7rem;
 }
-.tvShows,.myList,.recently-added{
+
+.tvShows,
+.myList,
+.recently-added {
     margin-left: 2rem;
 }
-.home,.tvShows,.myList,.movies,.recently-added{
+
+.home,
+.tvShows,
+.myList,
+.movies,
+.recently-added {
     color: #fff;
     text-decoration: none;
     font-weight: lighter;
     font-size: 14px;
 }
-.home:hover,.tvShows:hover,.myList:hover,.movies:hover,.recently-added:hover{
+
+.home:hover,
+.tvShows:hover,
+.myList:hover,
+.movies:hover,
+.recently-added:hover {
     text-decoration: none;
 }
-.icon{
+
+.icon {
     margin-right: 6rem;
     font-size: 17px;
 }
-.icon a{
+
+.icon a {
     color: white;
     margin-left: 1rem;
 }
-.icon .searchBtn{
+
+.icon .searchBtn {
     font-size: 15px;
 }
-@media(max-width:406px){
-    .home,.tvShows,.myList,.movies,.recently-added{
+
+@media(max-width:406px) {
+
+    .home,
+    .tvShows,
+    .myList,
+    .movies,
+    .recently-added {
         display: none;
     }
 }

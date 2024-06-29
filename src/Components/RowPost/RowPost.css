@@ -1,44 +1,59 @@
-.row{
-    margin-left: 20px;
+.row {
+    margin-left: 10px;
     color: #fff;
+    scroll-behavior: smooth;
 }
-.posters{
+
+.posters {
     display: flex;
     padding: 20px;
     overflow-y: hidden;
     overflow-x: scroll;
 }
-.posters::-webkit-scrollbar{
+
+.title {
+    font-size: 2rem;
+}
+
+.posters::-webkit-scrollbar {
     display: none;
 }
 
-.poster{
+.poster {
     max-height: 250px;
     margin-right: 10px;
     cursor: pointer;
+    border-radius: .5rem;
 }
-.smallPoster{
+
+.smallPoster {
     max-height: 100px;
     margin-right: 10px;
     cursor: pointer;
+    border-radius: .5rem;
 }
-.poster:hover{
-    transform: scale(1.1);
+
+.poster:hover {
+    transform: scale(.97);
 }
-.smallPoster:hover{
-    transform: scale(1.1);
+
+.smallPoster:hover {
+    transform: scale(.97);
 }
-.objTitle{
+
+.objTitle {
     position: relative;
     opacity: 50%;
 }
-@media(max-width:406px){
-    .row{
+
+@media(max-width:406px) {
+    .row {
         margin-top: 9rem;
         margin-bottom: -7rem;
         margin-left: 5px;
     }
-    .title{
+
+    .title {
         font-size: 18px;
     }
 }
