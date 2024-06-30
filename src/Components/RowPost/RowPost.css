@@ -24,6 +24,7 @@
     margin-right: 10px;
     cursor: pointer;
     border-radius: .5rem;
+    transition: transform .5s;
 }
 
 .smallPoster {
@@ -34,11 +35,11 @@
 }
 
 .poster:hover {
-    transform: scale(.97);
+    transform: scale(1.05);
 }
 
 .smallPoster:hover {
-    transform: scale(.97);
+    transform: scale(1.05);
 }
 
 .objTitle {

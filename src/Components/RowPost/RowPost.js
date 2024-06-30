@@ -11,7 +11,6 @@ function RowPost(props) {
         playerVars: {
             // https://developers.google.com/youtube/player_parameters
             autoplay: 1,
-            controls: 0
         },
     };
     const [urlId, setUrlId] = useState('')
@@ -40,12 +39,12 @@ function RowPost(props) {
             <h4 className="title">{props.title}</h4>
             <div className="posters">
                 {movies.map((obj, index) =>
-                    <div key={index}>
-                        <img alt="" onClick={() => handleMovie(obj.id)} className={props.isSmall ? "smallPoster" : "poster"} src={`${imageUrl + obj.backdrop_path}`} />
+                    <div key={index} className='poster'>
+                        <img alt="" loading='lazy' onClick={() => handleMovie(obj.id)} className={props.isSmall ? "smallPoster" : "poster"} src={`${imageUrl + obj.backdrop_path}`} />
                     </div>
                 )}
             </div>
-            {urlId && <YouTube onPause={() => setUrlId('')} onEnd={() => setUrlId('')} loading='lazy' onError={() => setUrlId('')} opts={opts} videoId={urlId.key} />}
+            {urlId && <YouTube onEnd={() => setUrlId('')} loading='lazy' onError={() => setUrlId('')} opts={opts} videoId={urlId.key} />}
         </div>
     )
 }
